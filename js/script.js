@@ -82,7 +82,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   function pb() {
     let i = 0
-    let UpcomingDate = new Date('26 september 2022 00:00:00 AM');
+    let UpcomingDate = new Date('26 september 2022 00:00:00 AM')
     let NowDate = new Date();
     differanceS  = Math.floor((UpcomingDate-NowDate)/1000)
     i = 100 - differanceS / 31536000 * 100
