@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
   const loader = document.querySelector('.loader'),
-    age = document.querySelectorAll('.age')
+    age = document.querySelectorAll('.age'),
+    p = document.querySelector('.my-progress')
 
   // Loader
   setTimeout(() => {
@@ -54,26 +55,23 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
   // progress bar
-  // scroller.addEventListener('scroll', (event) => {
-  //   p.style.width = pb(event.target) + '%'
-  // })
+  p.style.width = pb() + '%'
 
-  // function pb(progress) {
-  //   return progress.scrollTop / ((progress.scrollHeight - progress.clientHeight) / 100)
-  // }
-  
-  for (let i = 0; i < 101; i++) {
-    console.log(i);
-  }
+  function pb() {
+    // return progress.scrollTop / ((progress.scrollHeight - progress.clientHeight) / 100)
+    let i = 90
+    
+    // age
+    if (i == 100) {
+      age[0].classList.add('hide')
+      age[1].classList.add('ageSm')
+      age[2].classList.remove('active')
+      age[3].classList.add('active')
+      age[4].classList.remove('ageSm')
+      age[5].classList.remove('hide')
+    }
 
-  // age
-  if (i == 100) {
-    age[0].classList.add('hide')
-    age[1].classList.add('ageSm')
-    age[2].classList.remove('active')
-    age[3].classList.add('active')
-    age[4].classList.remove('ageSm')
-    age[5].classList.remove('hide')
+    return i
   }
 
 })
