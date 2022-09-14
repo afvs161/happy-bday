@@ -1,0 +1,242 @@
+html {
+  font-size: calc(100vmax / 1500 * 100);
+}
+
+.over {
+  background-color: #e2aa01;
+  margin: 120px auto 50px;
+  width: 90%;
+  height: 450px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+}
+
+.title {
+  font-family: "Pacifico", cursive;
+  font-size: clamp(36px, 0.6rem, 100px);
+  color: #fff;
+}
+
+.title p {
+  font-size: .3rem;
+  text-shadow: none;
+  background-color: rgba(0,0,0,0.75);
+}
+
+[class^=firework-] {
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  border-radius: 50%;
+}
+
+.firework-1 {
+  -webkit-animation: firework-md 1.2s both infinite;
+          animation: firework-md 1.2s both infinite;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  top: 85%;
+  left: 45%;
+}
+
+.firework-2 {
+  -webkit-animation: firework-lg 1.2s both infinite;
+          animation: firework-lg 1.2s both infinite;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  top: 65%;
+  left: 75%;
+}
+
+.firework-3 {
+  -webkit-animation: firework-lg 1.2s both infinite;
+          animation: firework-lg 1.2s both infinite;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  top: 15%;
+  left: 25%;
+}
+
+.firework-4 {
+  -webkit-animation: firework-lg 1.2s both infinite;
+          animation: firework-lg 1.2s both infinite;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  top: 80%;
+  left: 70%;
+}
+
+.firework-5 {
+  -webkit-animation: firework-lg 1.2s both infinite;
+          animation: firework-lg 1.2s both infinite;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+  top: 20%;
+  left: 35%;
+}
+
+.firework-6 {
+  -webkit-animation: firework-md 1.2s both infinite;
+          animation: firework-md 1.2s both infinite;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  top: 60%;
+  left: 80%;
+}
+
+.firework-7 {
+  -webkit-animation: firework-md 1.2s both infinite;
+          animation: firework-md 1.2s both infinite;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  top: 45%;
+  left: 80%;
+}
+
+.firework-8 {
+  -webkit-animation: firework-md 1.2s both infinite;
+          animation: firework-md 1.2s both infinite;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  top: 40%;
+  left: 70%;
+}
+
+.firework-9 {
+  -webkit-animation: firework-md 1.2s both infinite;
+          animation: firework-md 1.2s both infinite;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  top: 30%;
+  left: 60%;
+}
+
+.firework-10 {
+  -webkit-animation: firework-lg 1.2s both infinite;
+          animation: firework-lg 1.2s both infinite;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+  top: 90%;
+  left: 60%;
+}
+
+.firework-11 {
+  -webkit-animation: firework-lg 1.2s both infinite;
+          animation: firework-lg 1.2s both infinite;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  top: 20%;
+  left: 15%;
+}
+
+.firework-12 {
+  -webkit-animation: firework-lg 1.2s both infinite;
+          animation: firework-lg 1.2s both infinite;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  top: 75%;
+  left: 55%;
+}
+
+.firework-13 {
+  -webkit-animation: firework-md 1.2s both infinite;
+          animation: firework-md 1.2s both infinite;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  top: 35%;
+  left: 20%;
+}
+
+.firework-14 {
+  -webkit-animation: firework-sm 1.2s both infinite;
+          animation: firework-sm 1.2s both infinite;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  top: 45%;
+  left: 90%;
+}
+
+.firework-15 {
+  -webkit-animation: firework-sm 1.2s both infinite;
+          animation: firework-sm 1.2s both infinite;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  top: 45%;
+  left: 65%;
+}
+
+@-webkit-keyframes firework-sm {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 70% {
+    opacity: 1;
+  }
+  100% {
+    box-shadow: -0.5rem 0rem 0 #fff, 0.5rem 0rem 0 #fff, 0rem -0.5rem 0 #fff, 0rem 0.5rem 0 #fff, 0.35rem -0.35rem 0 #fff, 0.35rem 0.35rem 0 #fff, -0.35rem -0.35rem 0 #fff, -0.35rem 0.35rem 0 #fff;
+  }
+}
+
+@keyframes firework-sm {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 70% {
+    opacity: 1;
+  }
+  100% {
+    box-shadow: -0.5rem 0rem 0 #fff, 0.5rem 0rem 0 #fff, 0rem -0.5rem 0 #fff, 0rem 0.5rem 0 #fff, 0.35rem -0.35rem 0 #fff, 0.35rem 0.35rem 0 #fff, -0.35rem -0.35rem 0 #fff, -0.35rem 0.35rem 0 #fff;
+  }
+}
+@-webkit-keyframes firework-md {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 70% {
+    opacity: 1;
+  }
+  100% {
+    box-shadow: -0.7rem 0rem 0 #fff, 0.7rem 0rem 0 #fff, 0rem -0.7rem 0 #fff, 0rem 0.7rem 0 #fff, 0.49rem -0.49rem 0 #fff, 0.49rem 0.49rem 0 #fff, -0.49rem -0.49rem 0 #fff, -0.49rem 0.49rem 0 #fff;
+  }
+}
+@keyframes firework-md {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 70% {
+    opacity: 1;
+  }
+  100% {
+    box-shadow: -0.7rem 0rem 0 #fff, 0.7rem 0rem 0 #fff, 0rem -0.7rem 0 #fff, 0rem 0.7rem 0 #fff, 0.49rem -0.49rem 0 #fff, 0.49rem 0.49rem 0 #fff, -0.49rem -0.49rem 0 #fff, -0.49rem 0.49rem 0 #fff;
+  }
+}
+@-webkit-keyframes firework-lg {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 70% {
+    opacity: 1;
+  }
+  100% {
+    box-shadow: -0.9rem 0rem 0 #fff, 0.9rem 0rem 0 #fff, 0rem -0.9rem 0 #fff, 0rem 0.9rem 0 #fff, 0.63rem -0.63rem 0 #fff, 0.63rem 0.63rem 0 #fff, -0.63rem -0.63rem 0 #fff, -0.63rem 0.63rem 0 #fff;
+  }
+}
+@keyframes firework-lg {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 70% {
+    opacity: 1;
+  }
+  100% {
+    box-shadow: -0.9rem 0rem 0 #fff, 0.9rem 0rem 0 #fff, 0rem -0.9rem 0 #fff, 0rem 0.9rem 0 #fff, 0.63rem -0.63rem 0 #fff, 0.63rem 0.63rem 0 #fff, -0.63rem -0.63rem 0 #fff, -0.63rem 0.63rem 0 #fff;
+  }
+}

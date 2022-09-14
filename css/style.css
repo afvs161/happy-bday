@@ -24,8 +24,18 @@ section {
   position: absolute;
   transform-style: preserve-3d;
 }
+/* .box__none {
+  position: absolute;
+  opacity: 0;
+} */
 .hide {
   display: none;
+  position: absolute;
+  opacity: 0;
+}
+.fadeIn {
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 .fade {
   animation-name: fade;
@@ -49,10 +59,8 @@ section {
 }
 .main_box{
   margin: 120px auto 50px;
-  display: table-row;
   width: 90%;
-  height: 400px;
-  /* line-height: 400px; */
+  height: 450px;
   border-radius: 10px;
   text-align: center;
   font-family: 'Chakra Petch', sans-serif;
@@ -64,6 +72,15 @@ section {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   background: url('../images/6023063.jpg') center center/cover no-repeat;
+}
+.main_box p {
+  font-size: .5rem;
+  font-family: "Pacifico", cursive;
+  color: #e2b714;
+  font-style: italic;
+  float: right;
+  margin-right: 10px;
+  text-shadow: 1px 2px #56440c;
 }
 span {
   text-shadow: none;
@@ -93,10 +110,11 @@ span {
   height: 10px;
   border-radius: 5px;
   background-color: #000000;
+  overflow: hidden;
 }
 .my-progress {
   border-radius: 5px;
-  width: 80%;
+  width: 0;
   height: 100%;
   background-color: #e2b714;
 }
@@ -109,13 +127,14 @@ ul {
 .age {
   margin: 0 4px;
   opacity: .7;
+  font-size: .7rem;
 }
 .ageSm {
-  font-size: 1.5rem;
+  font-size: .4rem;
   opacity: .5;
 }
 .active {
-  font-size: 3.7rem;
+  font-size: 1.3rem;
   opacity: 1;
   color: #e2b714;
   background: rgba(0, 0, 0, 0.5);

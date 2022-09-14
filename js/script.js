@@ -1,15 +1,19 @@
 window.addEventListener('DOMContentLoaded', () => {
   const loader = document.querySelector('.loader'),
     age = document.querySelectorAll('.age'),
-    p = document.querySelector('.my-progress')
+    p = document.querySelector('.my-progress'),
+    mBox = document.querySelector('.main_box'),
+    aBox = document.querySelector('.over'),
+    hat = document.querySelector('.animate__animated')
+    h5 = document.querySelector('h5')
 
   // Loader
   setTimeout(() => {
     loader.style.opacity = '0'
     setTimeout(() => {
       loader.style.display = 'none'
-    }, 0)
-  }, 0)
+    }, 500)
+  }, 2000)
 
 
   // Countdown
@@ -53,23 +57,35 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   },1000)
 
-
-  // progress bar
-  p.style.width = pb() + '%'
-
-  function pb() {
-    // return progress.scrollTop / ((progress.scrollHeight - progress.clientHeight) / 100)
-    let i = 90
-    
+  setInterval(() => {
     // age
-    if (i == 100) {
+    if (pb() >= 100) {
       age[0].classList.add('hide')
       age[1].classList.add('ageSm')
       age[2].classList.remove('active')
       age[3].classList.add('active')
       age[4].classList.remove('ageSm')
       age[5].classList.remove('hide')
+
+      // animation
+      mBox.classList.add('hide')
+      aBox.classList.add('fadeIn')
+      aBox.classList.remove('hide')
+      hat.classList.add('animate__bounceIn')
+      h5.classList.add('animate__heartBeat')
     }
+  
+    // progress bar
+    p.style.width = pb() + '%'
+
+  }, 1000)
+
+  function pb() {
+    let i = 0
+    let UpcomingDate = new Date('26 september 2022 00:00:00 AM');
+    let NowDate = new Date();
+    differanceS  = Math.floor((UpcomingDate-NowDate)/1000)
+    i = 100 - differanceS / 31536000 * 100
 
     return i
   }
